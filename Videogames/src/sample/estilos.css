@@ -1,0 +1,19 @@
+.fondo{
+-fx-background-image: url("./img/fondini.jpg");
+}
+.buttonAceptar{
+-fx-background-color:#282D65;
+-fx-background-radius: 30px;
+}
+.textfield{
+-fx-background-color:#5254A7;
+-fx-background-radius: 15px;
+}
+.cabecera{
+-fx-background-color:#18B4F1;
+}
+.buttonlight{
+-fx-background-color:#55B2BE;
+-fx-background-radius: 30px;
+}
+
