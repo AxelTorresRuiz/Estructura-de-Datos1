@@ -14,7 +14,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="601.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerCobro">
    <top>
       <HBox prefHeight="70.0" prefWidth="600.0" styleClass="cabecera" BorderPane.alignment="CENTER">
@@ -36,7 +35,7 @@
                   <Insets right="6.0" top="10.0" />
                </HBox.margin>
             </ImageView>
-            <Label text="Axel Torres">
+            <Label fx:id="txtnameuser" text="Axel Torres">
                <HBox.margin>
                   <Insets right="20.0" top="20.0" />
                </HBox.margin>
@@ -84,6 +83,14 @@
                   </Button>
                </children>
             </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtventa" />
+                  <Button mnemonicParsing="false" onAction="#insertarventa" prefHeight="25.0" prefWidth="66.0" text="Insertar" />
+                  <Button mnemonicParsing="false" onAction="#ordenarventa" prefHeight="25.0" prefWidth="71.0" text="Ordenar" />
+                  <Label fx:id="lblventas" text="Label" />
+               </children>
+            </HBox>
          </children>
       </VBox>
    </center>
@@ -107,6 +114,8 @@
                   <Insets top="10.0" />
                </VBox.margin>
             </HBox>
+            <Button mnemonicParsing="false" onAction="#ordenarjuegos" prefHeight="25.0" prefWidth="161.0" text="Ordenar X Precio" />
+            <Button mnemonicParsing="false" onAction="#OrdenarNombre" prefHeight="25.0" prefWidth="160.0" text="Ordenar X Nombre" />
             <Button alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="30.0" mnemonicParsing="false" onAction="#insertarPedido" styleClass="buttonlight" text="Insertar" textAlignment="CENTER">
                <VBox.margin>
                   <Insets left="45.0" top="30.0" />

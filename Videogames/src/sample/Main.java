@@ -9,11 +9,12 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 public static Stage stage;
+public static String NombreUsuario="";
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage=primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Videojuegos");
         primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.getIcons().add(new Image("./sample/img/mariobros.jpeg"));
         primaryStage.show();

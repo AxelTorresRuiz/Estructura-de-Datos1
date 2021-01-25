@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import sample.Estructuras.Busqueda;
 import sample.Estructuras.ItemPedido;
 import sample.Estructuras.Pedido;
 
@@ -17,8 +18,11 @@ import java.util.Stack;
 public class ControllerCobro {
     @FXML ComboBox combazo;
     @FXML TableView tabla;
-    @FXML TextField txtCantJ,txtname;
+    @FXML TextField txtCantJ,txtname,txtventa;
     @FXML Label nombrepedido;
+    @FXML Label txtnameuser,lblventas;
+    int[] ventas=new int[5];
+
     LinkedList<String>listajuegos=new LinkedList<>();
     TableColumn columnJuego=new TableColumn("VIDEOJUEGO");
     TableColumn columncantJuego=new TableColumn("CANTIDAD");
@@ -27,7 +31,20 @@ public class ControllerCobro {
     Queue<ItemPedido>cola=new LinkedList<>();
     Stack<ItemPedido>pila =new Stack<>();
 
+    int vector[]={5,2,1,8,3,9,7};
+
+    String[][] videojuegos={
+            {"Call of Duty","1600"},
+            {"Super Mario Odyssey","1200"},
+            {"Gran Turismo","500"},
+            {"Halo","800"},
+            {"Mario Kart","1100"},
+            {"God of War","1000"},
+            {"Gears of War","400"},
+    };
+
     @FXML protected void initialize(){
+        txtnameuser.setText(Main.NombreUsuario);
         columnJuego.setCellValueFactory(new PropertyValueFactory<Pedido,String>("juego"));
         columncantJuego.setCellValueFactory(new PropertyValueFactory<Pedido,String>("cantjuego"));
 
@@ -35,13 +52,21 @@ public class ControllerCobro {
 
         tabla.setItems(listapedidos);
 
-        listajuegos.add("Call Of Duty");
-        listajuegos.add("Super Mario Odyssey");
-        listajuegos.add("Gran Turismo");
-        listajuegos.add("Halo");
-        listajuegos.add("Mario Kart");
-        listajuegos.add("God Of War");
-        listajuegos.add("Gears Of War");
+  //      listajuegos.add("Call Of Duty");
+  //      listajuegos.add("Super Mario Odyssey");
+  //      listajuegos.add("Gran Turismo");
+  //      listajuegos.add("Halo");
+  //      listajuegos.add("Mario Kart");
+  //      listajuegos.add("God Of War");
+  //      listajuegos.add("Gears Of War");
+
+        for (int x=0;x<videojuegos.length;x++){
+            listajuegos.add(videojuegos[x][0]);
+        }
+
+
+
+
         for (int x=0;x<listajuegos.size();x++) combazo.getItems().add(listajuegos.get(x));
 
     }
@@ -86,4 +111,39 @@ for(int x=0;x<datos.length;x++){
             AlertType.show();
         }
     }
+    int cont=0;
+    public void insertarventa(ActionEvent event){
+ventas[cont]=Integer.parseInt(txtventa.getText().toString());
+cont++;
+    }
+    public void ordenarventa(ActionEvent event){
+        Busqueda ordenar=new Busqueda();
+        int[]ordenado=ordenar.burbuja(ventas);
+      String todo="";
+      for (int x=0;x<ordenado.length;x++) todo+= ", "+ordenado[x];
+      lblventas.setText(todo);
+    }
+    public void ordenarjuegos(ActionEvent event){
+        Busqueda ordenar=new Busqueda();
+        combazo.getItems().clear();
+        listajuegos.clear();
+        String[][]ordenado=ordenar.burbujaArray(videojuegos);
+        for (int x=0;x<ordenado.length;x++){
+            listajuegos.add(ordenado[x][0]);
+            combazo.getItems().add(ordenado[x][0]);
+        }
+
+    }
+    public void OrdenarNombre(ActionEvent event){
+        Busqueda Alfabetica=new Busqueda();
+listajuegos.clear();
+String[][]alfa=Alfabetica.burbujaAlfa(videojuegos);
+for (int x=0;x<alfa.length;x++){
+    listajuegos.add(alfa[x][0]);
+//Intente hacer que ordenara alfabeticamente pero no me sale :(
+    //Y no entendi los metodos de busqueda :(
+    //Perdon por ser un mal estuadiante:(
+}
+    }
+
 }
