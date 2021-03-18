@@ -1,0 +1,75 @@
+.btnPrueba{
+
+    -fx-background-radius:5em;
+    -fx-min-width:30px;
+    -fx-min-height:30px;
+    -fx-max-width:30px;
+    -fx-max-height:30px;
+
+}
+
+.btnCuadro{
+
+    -fx-background-radius: 500;
+    -fx-background-image:url("./img/cuadro.png");
+    -fx-background-color:white;
+    -fx-background-size:70% 70%;
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:50% 50%;
+
+}
+
+.btnLinea{
+
+    -fx-background-radius: 500;
+    -fx-background-image:url("./img/linea.png");
+    -fx-background-color:white;
+    -fx-background-size:70% 70%;
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:50% 50%;
+
+}
+
+.btnCirculo{
+
+    -fx-background-radius: 500;
+    -fx-background-image:url("./img/circulo.png");
+    -fx-background-color:white;
+    -fx-background-size:70% 70%;
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:50% 50%;
+
+}
+
+.btnBorrador{
+
+    -fx-background-radius: 500;
+    -fx-background-image:url("./img/borrador.png");
+    -fx-background-color:white;
+    -fx-background-size:70% 70%;
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:50% 50%;
+
+}
+
+.btnPincel{
+
+    -fx-background-radius: 500;
+    -fx-background-image:url("./img/pincel.jpeg");
+    -fx-background-color:white;
+    -fx-background-size:70% 70%;
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:50% 50%;
+
+}
+
+.btnGuardar{
+
+    -fx-background-radius: 500;
+    -fx-background-image:url("./img/guardar.png");
+    -fx-background-color:white;
+    -fx-background-size:70% 70%;
+    -fx-background-repeat:no-repeat;
+    -fx-background-position:50% 50%;
+
+}
