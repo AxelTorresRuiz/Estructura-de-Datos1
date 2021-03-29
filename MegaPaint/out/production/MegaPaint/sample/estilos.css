@@ -11,7 +11,7 @@
 .btnCuadro{
 
     -fx-background-radius: 500;
-    -fx-background-image:url("./img/cuadro.png");
+    -fx-background-image:url(".src/sample/img/cuadro.png");
     -fx-background-color:white;
     -fx-background-size:70% 70%;
     -fx-background-repeat:no-repeat;
@@ -22,7 +22,7 @@
 .btnLinea{
 
     -fx-background-radius: 500;
-    -fx-background-image:url("./img/linea.png");
+    -fx-background-image:url("./sample/img/linea.png");
     -fx-background-color:white;
     -fx-background-size:70% 70%;
     -fx-background-repeat:no-repeat;
@@ -33,7 +33,7 @@
 .btnCirculo{
 
     -fx-background-radius: 500;
-    -fx-background-image:url("./img/circulo.png");
+
     -fx-background-color:white;
     -fx-background-size:70% 70%;
     -fx-background-repeat:no-repeat;
@@ -44,7 +44,7 @@
 .btnBorrador{
 
     -fx-background-radius: 500;
-    -fx-background-image:url("./img/borrador.png");
+
     -fx-background-color:white;
     -fx-background-size:70% 70%;
     -fx-background-repeat:no-repeat;
@@ -55,7 +55,7 @@
 .btnPincel{
 
     -fx-background-radius: 500;
-    -fx-background-image:url("./img/pincel.jpeg");
+
     -fx-background-color:white;
     -fx-background-size:70% 70%;
     -fx-background-repeat:no-repeat;
@@ -66,7 +66,7 @@
 .btnGuardar{
 
     -fx-background-radius: 500;
-    -fx-background-image:url("./img/guardar.png");
+
     -fx-background-color:white;
     -fx-background-size:70% 70%;
     -fx-background-repeat:no-repeat;

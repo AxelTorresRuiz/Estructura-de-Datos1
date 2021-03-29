@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <BorderPane prefHeight="200.0" prefWidth="626.0">
          <top>
@@ -31,27 +31,27 @@
                         <Insets left="20.0" top="10.0" />
                      </HBox.margin>
                   </Slider>
-                  <Button fx:id="btncuadro" mnemonicParsing="false" prefHeight="33.0" prefWidth="33.0" styleClass="btnCuadro" stylesheets="@estilos.css">
+                  <Button fx:id="btncuadro" mnemonicParsing="false" prefHeight="33.0" prefWidth="33.0" styleClass="btnCuadro" stylesheets="@estilos.css" text="C">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="btnraya" mnemonicParsing="false" prefHeight="34.0" prefWidth="35.0" styleClass="btnLinea" stylesheets="@estilos.css">
+                  <Button fx:id="btnraya" mnemonicParsing="false" prefHeight="34.0" prefWidth="35.0" styleClass="btnLinea" stylesheets="@estilos.css" text="L">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="btncirculo" mnemonicParsing="false" prefHeight="34.0" prefWidth="35.0" styleClass="btnCirculo" stylesheets="@estilos.css">
+                  <Button fx:id="btncirculo" mnemonicParsing="false" prefHeight="34.0" prefWidth="35.0" styleClass="btnCirculo" stylesheets="@estilos.css" text="E">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#borrar" prefHeight="34.0" prefWidth="37.0" styleClass="btnBorrador" stylesheets="@estilos.css">
+                  <Button mnemonicParsing="false" onAction="#borrar" prefHeight="34.0" prefWidth="37.0" styleClass="btnBorrador" stylesheets="@estilos.css" text="B">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="btnguardar" mnemonicParsing="false" prefHeight="34.0" prefWidth="44.0" styleClass="btnGuardar" stylesheets="@estilos.css">
+                  <Button fx:id="btnguardar" mnemonicParsing="false" prefHeight="34.0" prefWidth="44.0" styleClass="btnGuardar" stylesheets="@estilos.css" text="G">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>

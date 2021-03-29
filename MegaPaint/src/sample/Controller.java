@@ -31,7 +31,8 @@ public class Controller {
 
        }
 
-    public void cambiarcolor(ActionEvent event){
+    public void cambiarcolor(ActionEvent event)
+    {
         colorpincel=colorpiker.getValue();
     }
 
